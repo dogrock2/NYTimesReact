@@ -3,15 +3,13 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const socket = require('socket.io');
 const app = express();
-const PORT = process.env.PORT || 3001;
-
+const PORT = process.env.PORT || 80;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.static("client/build"));
 require("./controller/controller.js")(app);
-
 
 mongoose.Promise = global.Promise;
 mongoose.connect(
