@@ -3,7 +3,7 @@ import FormComponents from "./FormComponents";
 import SavedResults from "./Saved";
 import SearchResults from "./SearchResults";
 import Modal from "./Modal/Modal";
-import openSocket from 'socket.io-client';
+import io from 'socket.io-client';
 
 class Home extends React.Component {
 
@@ -18,7 +18,7 @@ class Home extends React.Component {
             open: false
         };
 
-        this.socket = openSocket();
+        this.socket = io.connect(window.location.hostname);
 
         this.socket.on('articleAddedMsg', data => {
                 this.chngModal("Articles", data.message);
