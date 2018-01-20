@@ -1,0 +1,17 @@
+#mainHeading {
+    font-size: 30px;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: underline;
+}
+#secondaryHeading {
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+#headingContainer {
+    border-bottom: 2px solid black;
+}
+
+.bgColorStyling {
+    /*background-color: #f0f8ff;*/
+}

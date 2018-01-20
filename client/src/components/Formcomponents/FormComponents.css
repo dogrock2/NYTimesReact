@@ -1,0 +1,18 @@
+
+.fontStyle {
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+#searchBtn {
+    height: 80px;
+    width: 150px;
+}
+
+.bgColorStyling {
+  /*background-color: #f0f8ff;*/
+}
+
+.topic::placeholder {
+    font-weight:normal;
+}
