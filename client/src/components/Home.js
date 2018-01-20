@@ -18,7 +18,7 @@ class Home extends React.Component {
             open: false
         };
 
-        this.socket = openSocket('127.0.0.1:3001');
+        this.socket = openSocket();
 
         this.socket.on('articleAddedMsg', data => {
                 this.chngModal("Articles", data.message);
