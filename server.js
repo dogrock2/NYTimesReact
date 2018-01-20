@@ -21,13 +21,9 @@ mongoose.connect(
   }
 );
 
-app.listen(PORT, function() {
+const server = app.listen(PORT, function() {
   console.log(`API Server now listening on PORT ${PORT}!`);
 });
-
-const server = express.createServer({ key: "123" });
-register(server);
-https.listen(443);
 
 const io = socket(server);
 
